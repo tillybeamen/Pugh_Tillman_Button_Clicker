@@ -1,9 +1,11 @@
 function clicked(element) {
-    console.log("Logout")
+    
+   if(element.innerText == "Login") {
     element.innerText = "Logout"
+   }
+   else (element.innerText = "Login")
 }
 
-function nothing(element) {
-    console.log("")
-    element.innerText = " "
+function hide(element) {
+element.remove()
 }
